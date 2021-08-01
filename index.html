@@ -30,6 +30,21 @@
 
 		<!-- Core Style Css -->
         <link rel="stylesheet" href="./files/style.css">
+		<style>
+			@media screen and (max-width: 1024px) {
+				#bg-section {
+					background-size: auto 110%;
+					background-position-x: center !important;
+				}
+			}
+
+			#contact-form{
+				width: 100%;
+				height: 964px;
+				background-color: white;
+				overflow-x: hidden;
+			}
+		</style>
 
         <!--[if lt IE 9]-->
 		<script src="./files/html5shiv.min.js"></script>
@@ -38,7 +53,7 @@
     <body>
 
     	<!-- ====== Preloader ======  -->
-	    <div class="loading" style="display: none;">
+	    <div class="loading">
 			<div class="load-circle">
 			</div>
 		</div>
@@ -91,7 +106,7 @@
 		<!-- ====== End Navgition ======  -->
 
 		<!-- ====== Header ======  -->
-		<section class="header creative" data-stellar-background-ratio="0.5" data-scroll-index="0" style="background-position: top left">
+		<section id="bg-section" class="header creative" data-stellar-background-ratio="0.5" data-scroll-index="0">
 			<div class="container">
 				<div class="row">
 					<div class="v-middle">
@@ -170,11 +185,11 @@
 						<div class="skills">
 							<div class="item">
 								<h6>Comida mediterránea</h6>
-								<div class="skills-progress"><span data-value="90%" style="width: 80%;"></span></div>
+								<div class="skills-progress"><span data-value="90%"></span></div>
 							</div>
 							<div class="item">
 								<h6>Comida ecológica</h6>
-								<div class="skills-progress"><span data-value="70%" style="width: 90%;"></span></div>
+								<div class="skills-progress"><span data-value="70%"></span></div>
 							</div>
 						</div>
 					</div>
@@ -183,11 +198,11 @@
 						<div class="skills">
 							<div class="item">
 								<h6>Comida fusión</h6>
-								<div class="skills-progress"><span data-value="80%" style="width: 80%;"></span></div>
+								<div class="skills-progress"><span data-value="80%"></span></div>
 							</div>
 							<div class="item">
 								<h6>Comida gourmet</h6>
-								<div class="skills-progress"><span data-value="85%" style="width: 85%;"></span></div>
+								<div class="skills-progress"><span data-value="85%"></span></div>
 							</div>
 						</div>
 					</div>
@@ -405,10 +420,10 @@
 					</div>
 
 					<!-- gallery -->
-					<div class="gallery text-center" style="position: relative; height: 780px;">
+					<div class="gallery text-center">
 
 						<!-- gallery item -->
-						<div class="col-md-4 items presentation" style="position: absolute; left: 0px; top: 0px;">
+						<div class="col-md-4 items presentation">
 							<div class="item-img">
 							
 							<img src="./files/1.jpg" alt="image">
@@ -428,7 +443,7 @@
 						</div>
 
 						<!-- gallery item -->
-						<div class="col-md-4 items restaurante" style="position: absolute; left: 0px; top: 0px;">
+						<div class="col-md-4 items restaurante">
 							<div class="item-img">
 							
 							<img src="./files/funny.jpg" alt="image">
@@ -448,7 +463,7 @@
 						</div>
 
 						<!-- gallery item -->
-						<div class="col-md-4 items presentation" style="position: absolute; left: 390px; top: 0px;">
+						<div class="col-md-4 items presentation">
 							<div class="item-img">
 							
 							<img src="./files/2.jpg" alt="image">
@@ -468,7 +483,7 @@
 						</div>
 
 						<!-- gallery item -->
-						<div class="col-md-4 items restaurante" style="position: absolute; left: 0px; top: 0px;">
+						<div class="col-md-4 items restaurante">
 							<div class="item-img">
 							
 							<img src="./files/elnacional.jpg" alt="image">
@@ -488,7 +503,7 @@
 						</div>
 
 						<!-- gallery item -->
-						<div class="col-md-4 items presentation" style="position: absolute; left: 780px; top: 0px;">
+						<div class="col-md-4 items presentation">
 							<div class="item-img">
 							
 							<img src="./files/3.jpg" alt="image">
@@ -508,7 +523,7 @@
 						</div>
 
 						<!-- gallery item -->
-						<div class="col-md-4 items restaurante" style="position: absolute; left: 0px; top: 0px;">
+						<div class="col-md-4 items restaurante">
 							<div class="item-img">
 							
 							<img src="./files/messi.jpg" alt="image">
@@ -528,7 +543,7 @@
 						</div>
 
 						<!-- gallery item -->
-						<div class="col-md-4 items tapas" style="position: absolute; left: 0px; top: 390px;">
+						<div class="col-md-4 items tapas">
 							<div class="item-img">
 							
 							<img src="./files/4.jpg" alt="image">
@@ -548,7 +563,7 @@
 						</div>
 
 						<!-- gallery item -->
-						<div class="col-md-4 items restaurante" style="position: absolute; left: 0px; top: 0px;">
+						<div class="col-md-4 items restaurante">
 							<div class="item-img">
 							
 							<img src="./files/juntos.jpg" alt="image">
@@ -568,7 +583,7 @@
 						</div>
 
 						<!-- gallery item -->
-						<div class="col-md-4 items postre" style="position: absolute; left: 390px; top: 390px;">
+						<div class="col-md-4 items postre">
 							<div class="item-img">
 							
 							<img src="./files/5.jpg" alt="image">
@@ -588,7 +603,7 @@
 						</div>
 
 						<!-- gallery item -->
-						<div class="col-md-4 items presentation" style="position: absolute; left: 780px; top: 390px;">
+						<div class="col-md-4 items presentation">
 							<div class="item-img">
 							
 							<img src="./files/6.jpg" alt="image">
@@ -718,50 +733,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-7">
-
-						<h4 class="head-left">Contacto</h4>
-
-						<form class="form" id="contact-form" method="post" action="" novalidate="true">
-	                        <div class="messages"></div>
-
-	                        <div class="controls">
-
-	                            <div class="row">
-	                                <div class="col-md-6">
-	                                    <div class="form-group">
-	                                        <input id="form_name" type="text" name="name" placeholder="Nombre" required="required" data-error="Nombre es obligatorio.">
-	                                        <div class="help-block with-errors"></div>
-	                                    </div>
-	                                </div>
-
-	                                 <div class="col-md-6">
-	                                    <div class="form-group">
-	                                        <input id="form_email" type="email" name="email" placeholder="Correo electrónico" required="required" data-error="Correo electrónico es inválido.">
-	                                        <div class="help-block with-errors"></div>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                            <div class="row">
-	                                <div class="col-md-12">
-	                                    <div class="form-group">
-	                                        <input id="form_subject" type="text" name="subject" placeholder="Asunto">
-	                                        <div class="help-block with-errors"></div>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                            <div class="row">
-	                                <div class="col-md-12">
-	                                    <div class="form-group">
-	                                        <textarea id="form_message" name="message" placeholder="Mensaje" rows="4" required="required" data-error="Mensaje es un campo obligatorio."></textarea>
-	                                        <div class="help-block with-errors"></div>
-	                                    </div>
-	                                </div>
-	                                <div class="col-sm-12">
-	                                    <input type="submit" value="Enviar mensaje" class="disabled">
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </form>
+						<iframe id="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSclpFk4Rb9xN40h55JB4P5A_0hi_vFtRMV7U-GwqkA8LrUZmg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 					</div>
 
 					<div class="col-md-offset-1 col-md-4">
